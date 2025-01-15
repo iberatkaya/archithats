@@ -9,14 +9,12 @@ const pageStyles = {
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles} className="bg-black">
-      <div>
-        <div className="bg-black w-full align-middle justify-center">
-          <img
-            className="h-96 sm:h-[100vh] w-72 sm:w-96 object-contain mx-auto animate-pulse"
-            src={Logo}
-          />
-        </div>
+    <main style={pageStyles} className="min-h-screen flex items-center justify-center">
+      <div className="w-full">
+        <img
+          className="h-96 sm:h-[100vh] w-72 sm:w-96 object-contain mx-auto animate-pulse"
+          src={Logo}
+        />
       </div>
     </main>
   );
